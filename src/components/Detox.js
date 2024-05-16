@@ -24,7 +24,7 @@ import support from "../assets/customer-service_9115952.png";
 import stomach from "../assets/stomach_10916924.png";
 import energy from "../assets/energy_11245496.png";
 import share from "../assets/sharing_10879318.png";
-
+import join from "../assets/join1.gif";
 const testimonials = [
   {
     id: 1,
@@ -231,7 +231,7 @@ const Detox = () => {
         </Row>
         <Row>
           <Col lg={{ span: 12 }}>
-            <NavLink to="https://www.instagram.com/divine_yoga_for_women/">
+            <NavLink to="https://wa.me/9176331621">
               <button
                 className="btn2"
                 style={{
@@ -392,14 +392,15 @@ const Detox = () => {
           <Col lg={12}>
             <div className="parallax">
               <p
-                style={{
-                  textAlign: "center",
-                  fontSize: "25px",
-                  paddingTop: "50px",
-                  paddingLeft: "150px",
-                  paddingRight: "150px",
-                  color: "white",
-                }}
+                className="parallax-text"
+                // style={{
+                //   textAlign: "center",
+                //   fontSize: "25px",
+                //   paddingTop: "50px",
+                //   paddingLeft: "150px",
+                //   paddingRight: "150px",
+                //   color: "white",
+                // }}
               >
                 Join our monthly detox program and take charge of your health
                 and wellness journey. Together, let's embrace a healthier
@@ -407,16 +408,7 @@ const Detox = () => {
                 families.
               </p>
               <NavLink to="https://www.instagram.com/divine_yoga_for_women/">
-                <button
-                  className="btn2"
-                  style={{
-                    marginTop: "40px",
-                    border: "none",
-                    marginBottom: "100px",
-                  }}
-                >
-                  Join Now
-                </button>
+                <img src={join} height="140" width="140" />
               </NavLink>
             </div>
           </Col>

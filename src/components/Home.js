@@ -75,34 +75,7 @@ function Home() {
   }, [animationsFinished]);
 
   const styles = {
-    // headText: {
-    //   lineHeight: 2,
-    //   fontSize: "32px",
-    //   color: "#ab3c94",
-    //   textTransform: "uppercase",
-    //   fontFamily: "montserrat",
-    //   marginLeft: "60px",
-    //   fontWeight: 500,
-    //   marginTop: "-60px",
-    // },
 
-    // mainHeading: {
-    //   lineHeight: 1,
-    //   color: "#121619",
-    //   marginLeft: "60px",
-    //   fontFamily: "montserrat",
-    //   fontSize: "40px",
-    //   fontWeight: 700,
-    // },
-    // subHeading: {
-    //   lineHeight: 1,
-    //   fontSize: "26px",
-    //   color: "#ab3c94",
-    //   textTransform: "uppercase",
-    //   marginLeft: "60px",
-    //   fontFamily: "montserrat",
-    //   marginTop: "20px",
-    // },
     row: {
       width: "30em",
     },

@@ -13,7 +13,7 @@ import Hormaone from "../assets/hormones.png";
 import Thumble from "../assets/dumbbell.png";
 import Pragancy from "../assets/pregnant.png";
 import Weight from "../assets/weight-loss.png";
-
+import enquiry from "../assets/enquiry.gif";
 const testimonials = [
   {
     id: 1,
@@ -313,15 +313,15 @@ const Testimonial = () => {
         <Row className="mb-5">
           <Col lg={12}>
             <div className="parallax">
-              <p
-                style={{
-                  textAlign: "center",
-                  fontSize: "25px",
-                  paddingTop: "50px",
-                  paddingLeft: "150px",
-                  paddingRight: "150px",
-                  color: "white",
-                }}
+              <p   className="parallax-text"
+                // style={{
+                //   textAlign: "center",
+                //   fontSize: "25px",
+                //   paddingTop: "50px",
+                //   paddingLeft: "150px",
+                //   paddingRight: "150px",
+                //   color: "white",
+                // }}
               >
                 Join our community of women committed to holistic wellness.
                 Whether you're seeking fitness, hormone balance, fertility
@@ -329,10 +329,13 @@ const Testimonial = () => {
                 or relief from PCOS symptoms, our online yoga sessions offer a
                 nurturing and empowering experience.
               </p>
-              <NavLink to="https://www.instagram.com/divine_yoga_for_women/">
+              {/* <NavLink to="https://www.instagram.com/divine_yoga_for_women/">
                 <button className="btn2" style={{ marginTop: "40px" }}>
                   Enquire Now
                 </button>
+              </NavLink> */}
+              <NavLink to="https://www.instagram.com/divine_yoga_for_women/">
+                <img src={enquiry} height="100" width="250" />
               </NavLink>
             </div>
           </Col>

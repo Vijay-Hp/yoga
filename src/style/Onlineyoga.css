@@ -39,7 +39,7 @@
     font-size: 50px !important;
   }
 }
-.btnonline{
+ .btnonline{
 
   background-color: #ab3c94;
   height: 60px;
@@ -51,6 +51,12 @@
   border-radius: 8px;
   border: none;
   margin-left: -350px;
+} 
+
+.whatsapp-icon {
+  color: white;
+  font-size: 24px; 
+  margin-right: 8px; 
 }
 @media (max-width: 768px) {
   .btnonline{
@@ -66,4 +72,36 @@
     border: none;
     margin-left: 100px !important; 
   }
+}
+
+/* parallex */
+.parallax {
+    
+  background-image: url('../assets//parallex.jpg');
+  height: 300px; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax-text
+{
+  text-align: center;
+  font-size: 24px;
+  padding-top: 50px;
+  padding-left: 150px;
+  padding-right: 150px;
+  color: white;
+}
+@media only screen and (max-width: 768px) {
+  .parallax-text
+  {
+    text-align: center;
+    font-size: 16px;
+    padding-top: 30px;
+    padding-left: 80px;
+    padding-right: 80px;
+    color: white;
+  }  
 }

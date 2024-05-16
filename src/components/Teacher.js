@@ -191,7 +191,7 @@ const Teacher = () => {
                 </p>
               </li>
             </ol>
-            <NavLink to="https://www.instagram.com/divine_yoga_for_women/">
+            <NavLink to="https://wa.me/9176331621">
               <button
                 className="btn2"
                 style={{

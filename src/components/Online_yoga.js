@@ -20,6 +20,10 @@ import fat from "../assets/fat.png";
 import strength from "../assets/think_12430457.png";
 import fun from "../assets/chat_7112992.png";
 import pcos from "../assets/pain_8902284.png";
+import enquiry from "../assets/enquiry.gif";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import { FaWhatsapp } from "react-icons/fa";
+
 const testimonials = [
   {
     id: 1,
@@ -397,8 +401,14 @@ const Onlineyoga = () => {
               Live Class on Zoom
             </p>
 
-            <NavLink to="https://www.instagram.com/divine_yoga_for_women/">
+            {/* <NavLink to="https://www.instagram.com/divine_yoga_for_women/">
               <button className="btnonline">Enquire Now</button>
+            </NavLink> */}
+            <NavLink to="https://wa.me/9176331621">
+              <button className="btnonline">
+                <FaWhatsapp className="whatsapp-icon" />
+                Enquire Now
+              </button>
             </NavLink>
           </Col>
         </Row>
@@ -430,13 +440,16 @@ const Onlineyoga = () => {
                 or relief from PCOS symptoms, our online yoga sessions offer a
                 nurturing and empowering experience.
               </p>
-              <NavLink to="https://www.instagram.com/divine_yoga_for_women/">
+              {/* <NavLink to="https://www.instagram.com/divine_yoga_for_women/">
                 <button
                   className="btn2"
                   style={{ marginTop: "40px", border: "none" }}
                 >
                   Enquire Now
                 </button>
+              </NavLink> */}
+              <NavLink to="https://www.instagram.com/divine_yoga_for_women/">
+                <img src={enquiry} height="100" width="250" />
               </NavLink>
             </div>
           </Col>
