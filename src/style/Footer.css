@@ -1,0 +1,120 @@
+.whats-app {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 15px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 35px;
+    z-index: 100;
+  }
+  
+  @media (max-width: 768px) {
+    .whats-app {
+      position: fixed;
+      width: 60px;
+      height: 60px;
+      bottom: 40px;
+      right: 20px;
+      background-color: #25d366;
+      color: #FFF;
+      border-radius: 50px;
+      text-align: center;
+      font-size: 35px;
+      z-index: 100;
+    }
+  }
+  /* .my-float {
+    margin-top: -1px;
+    margin-left: 2px;
+  }
+   */
+  .phone {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 120px;
+    right: 15px;
+    background-color: #007bff;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 25px;
+    z-index: 100;
+  }
+  @media (max-width: 768px) {
+    .phone {
+      position: fixed;
+      width: 60px;
+      height: 60px;
+      bottom: 120px;
+      right: 20px;
+      background-color: #007bff;
+      color: #FFF;
+      border-radius: 50px;
+      text-align: center;
+      font-size: 25px;
+      z-index: 100;
+    }
+  }
+  .my-float1 {
+    margin-top:17px;
+    margin-left: 0px;
+  }
+
+.copyright {
+    text-align: center; 
+    padding: 10px;
+    margin-top: 20px;
+  }
+
+.add-icon
+{
+    margin-right: 25px;
+    font-size: 20px;
+    color: white;
+}
+@media (max-width: 768px) {
+  .add-icon
+{
+    margin-right: 25px;
+    font-size: 20px;
+    color: white;
+    margin-left: 50px;
+}
+}
+.phone-icon
+{
+
+    font-size: 20px;
+    color:white;
+    margin-right: 25px;
+}
+@media (max-width: 768px) {
+  .phone-icon
+{
+    
+    font-size: 20px;
+    color:White;
+    margin-right: 25px;
+}
+}
+.mail-icon
+{
+    
+    color: white;
+    margin-right: 25px;
+    font-size: 20px;
+}
+@media (max-width: 768px) {
+  .mail-icon
+{
+    color: white;
+    margin-right: 25px;
+    font-size: 20px;
+}
+}
+

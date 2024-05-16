@@ -1,0 +1,69 @@
+ .sub-title
+{
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.yogaicon
+{
+  margin-top: 40px;
+  color: #ab3c94;
+  margin-left: -300px; 
+  font-size: 50px !important;
+  height: 50px;
+  width: 50px;
+}
+@media (max-width: 768px) {
+  .yogaicon
+{
+  margin-top: 40px;
+  color: #ab3c94;
+  margin-left: -400px; 
+  font-size: 50px !important;
+}
+} 
+
+.yogaicon10
+{
+  margin-top: 40px;
+  color: #ab3c94;
+  margin-left: -500px !important; 
+  font-size: 50px !important;
+}
+@media (max-width: 768px) {
+  .yogaicon10
+  {
+    margin-top: 40px;
+    color: #ab3c94;
+    margin-left: -150px !important; 
+    font-size: 50px !important;
+  }
+}
+.btnonline{
+
+  background-color: #ab3c94;
+  height: 60px;
+  width: 150px;
+  color: white;
+  font-size: 16px;
+  margin-top: 20px;
+  margin-bottom: 600px;
+  border-radius: 8px;
+  border: none;
+  margin-left: -350px;
+}
+@media (max-width: 768px) {
+  .btnonline{
+
+    background-color: #ab3c94;
+    height: 60px;
+    width: 150px;
+    color: white;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 600px;
+    border-radius: 8px;
+    border: none;
+    margin-left: 100px !important; 
+  }
+}

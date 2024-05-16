@@ -1,0 +1,96 @@
+
+.carousel-img
+{
+  margin-top: 10px;
+   width: 100%;
+}
+@media (max-width: 768px) {
+  .carousel-img
+  {
+     height: 400px;
+  }
+}
+.head
+{
+  margin-top: -65px;
+}
+@media (max-width: 768px) {
+  .head
+  {
+    margin-top: -165px;
+    z-index: -1;
+  }
+}
+.slide-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .slide-text {
+    text-align: center;
+    color:black;
+  }
+ 
+  .slick-slider .slick-dots {
+    margin-top: 20px !important; /* Use !important if necessary */
+  }
+   .df
+  {
+    visibility: visible;
+    text-align: center;
+    line-height: 30px;
+    letter-spacing: 0px;
+    font-weight: 400;
+    font-size: 15px;
+    border-color: rgb(139, 139, 139);
+    border-style: none;
+    margin: 0px;
+    border-radius: 0px;
+    padding: 0px;
+    color: rgb(186, 186, 186);
+    text-decoration: none;
+    white-space: normal;
+    width: 489px;
+    height: auto;
+    min-height: 0px;
+    min-width: 0px;
+    max-height: none;
+    max-width: none;
+    opacity: 1;
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform-origin: 50% 50% 0px;
+    margin-left: 550px;
+  } 
+
+  @media (max-width: 768px) {
+  .df
+  {
+    visibility: visible;
+    text-align: center;
+    line-height: 25px;
+    letter-spacing: 0px;
+    font-weight: 400;
+    font-size: 15px;
+    border-color: rgb(139, 139, 139);
+    border-style: none;
+    margin: 0px;
+    border-radius: 0px;
+    padding: 0px;
+    color: rgb(186, 186, 186);
+    text-decoration: none;
+    white-space: normal;
+    width: 400px;
+    height: auto;
+    min-height: 0px;
+    min-width: 0px;
+    max-height: none;
+    max-width: none;
+    opacity: 1;
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform-origin: 50% 50% 0px;
+    margin-left: 10px;
+  } 
+  }

@@ -1,0 +1,21 @@
+.team-img {
+    height: 200px;
+    width: 200px;
+    margin: auto;
+    display: block;
+    border-radius: 50%;
+}
+
+.name
+{
+    font-family:'Times New Roman', Times, serif;
+    color: #ab3c94;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    font-variant:small-caps;
+}
+.role
+{
+    font-size: 10px;
+}
