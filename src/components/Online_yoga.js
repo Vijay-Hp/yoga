@@ -20,7 +20,7 @@ import fat from "../assets/fat.png";
 import strength from "../assets/think_12430457.png";
 import fun from "../assets/chat_7112992.png";
 import pcos from "../assets/pain_8902284.png";
-import enquiry from "../assets/enquiry.gif";
+import enquiry from "../assets/enquiry (1).gif";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import { FaWhatsapp } from "react-icons/fa";
 
@@ -54,7 +54,7 @@ const Onlineyoga = () => {
       <Container>
         <Row>
           <Col lg={12} className="mt-5">
-            <h2>Theme-Based Online Yoga Class</h2>
+            <h2 className="heading">Theme-Based Online Yoga Class</h2>
             <h5 className="sub-title mt-3">
               <i>
                 Our theme-based classes are thoughtfully designed to support
@@ -417,7 +417,7 @@ const Onlineyoga = () => {
       <Container>
         <Row>
           <Col lg="12" className="mt-lg-2 mb-5">
-            <h1>Testimonial</h1>
+            <h2 className="heading">Testimonial</h2>
 
             {testimonials.map((testimonial) => (
               <div key={testimonial.id}>

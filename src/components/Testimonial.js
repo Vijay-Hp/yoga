@@ -13,7 +13,7 @@ import Hormaone from "../assets/hormones.png";
 import Thumble from "../assets/dumbbell.png";
 import Pragancy from "../assets/pregnant.png";
 import Weight from "../assets/weight-loss.png";
-import enquiry from "../assets/enquiry.gif";
+import enquiry from "../assets/enquiry (1).gif";
 const testimonials = [
   {
     id: 1,
@@ -296,7 +296,7 @@ const Testimonial = () => {
       <Container>
         <Row>
           <Col lg="12" className="mt-5 mb-5">
-            <h1>Testimonial</h1>
+            <h2 className="heading">Testimonial</h2>
             <Slider {...settings} className="mt-5">
               {testimonials.map((testimonial) => (
                 <div key={testimonial.id}>
@@ -313,7 +313,8 @@ const Testimonial = () => {
         <Row className="mb-5">
           <Col lg={12}>
             <div className="parallax">
-              <p   className="parallax-text"
+              <p
+                className="parallax-text"
                 // style={{
                 //   textAlign: "center",
                 //   fontSize: "25px",

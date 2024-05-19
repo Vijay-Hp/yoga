@@ -12,9 +12,13 @@ import "slick-carousel/slick/slick-theme.css";
 import fruits from "../assets/fruits.jpg";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import carousel1 from "../assets/carousel1.jpeg";
-import carousel2 from "../assets/carousel2.jpeg";
-import carousel3 from "../assets/carousel3.jpeg";
+import detox1 from "../assets/detox/detox (1).jpeg";
+import detox2 from "../assets/detox/detox (2).jpeg";
+import detox3 from "../assets/detox/detox (3).jpeg";
+import detox4 from "../assets/detox/detox (4).jpeg";
+import detox5 from "../assets/detox/detox (5).jpeg";
+import detox6 from "../assets/detox/detox (6).jpeg";
+import detox7 from "../assets/detox/detox (7).jpeg";
 import month from "../assets/calendars_6050385.png";
 import family from "../assets/foster_12969672.png";
 import journey from "../assets/calendar_10447953.png";
@@ -25,20 +29,6 @@ import stomach from "../assets/stomach_10916924.png";
 import energy from "../assets/energy_11245496.png";
 import share from "../assets/sharing_10879318.png";
 import join from "../assets/join1.gif";
-const testimonials = [
-  {
-    id: 1,
-    name: "John Doe",
-    comment: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-  },
-  {
-    id: 2,
-    name: "Jane Smith",
-    comment:
-      "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  },
-  // Add more testimonials as needed
-];
 
 const Detox = () => {
   const settings = {
@@ -55,7 +45,7 @@ const Detox = () => {
       <Container>
         <Row>
           <Col lg={12} className="mt-5">
-            <h2>Detox Diet Workshop </h2>
+            <h2 className="heading">Detox Diet Workshop </h2>
             <h5 className="sub-title mt-3">
               <i>
                 Welcome to Divine Yoga for Women's exclusive Detox Diet Program,
@@ -229,6 +219,94 @@ const Detox = () => {
             </p>
           </Col>
         </Row>
+      </Container>
+
+      <Container>
+        <Row>
+          <Col lg="6" className="mt-5 mb-5">
+            <h2 className="heading">Detox Gallery</h2>
+            <Carousel
+              showArrows={false}
+              infiniteLoop={true}
+              autoPlay={true}
+              interval={3000}
+              showThumbs={false}
+            >
+              <div>
+                <img
+                  src={detox1}
+                  alt="Image 1"
+                  style={{ height: "500px", width: "500px" }}
+                />
+              </div>
+              <div>
+                <img
+                  src={detox2}
+                  alt="Image 1"
+                  style={{ height: "500px", width: "500px" }}
+                />
+              </div>
+              <div>
+                <img
+                  src={detox3}
+                  alt="Image 1"
+                  style={{ height: "500px", width: "500px" }}
+                />
+              </div>
+              <div>
+                <img
+                  src={detox4}
+                  alt="Image 1"
+                  style={{ height: "500px", width: "500px" }}
+                />
+              </div>
+              <div>
+                <img
+                  src={detox5}
+                  alt="Image 1"
+                  style={{ height: "500px", width: "500px" }}
+                />
+              </div>
+              <div>
+                <img
+                  src={detox6}
+                  alt="Image 1"
+                  style={{ height: "500px", width: "500px" }}
+                />
+              </div>
+              <div>
+                <img
+                  src={detox7}
+                  alt="Image 1"
+                  style={{ height: "500px", width: "500px" }}
+                />
+              </div>
+            </Carousel>
+          </Col>
+
+          <Col lg="6" className="mt-5 mb-5">
+            <h2 className="heading">Feedbacks</h2>
+            <Carousel
+              showArrows={false}
+              infiniteLoop={true}
+              autoPlay={true}
+              interval={5000}
+              showThumbs={false}
+            >
+              <div>
+                <img src={fruits} alt="Image 1" />
+              </div>
+              <div>
+                <img src={fruits} alt="Image 1" />
+                {/* <p className="legend">Legend 2</p> */}
+              </div>
+              <div>
+                <img src={fruits} alt="Image 1" />
+              </div>
+              {/* Add more images as needed */}
+            </Carousel>
+          </Col>
+        </Row>
         <Row>
           <Col lg={{ span: 12 }}>
             <NavLink to="https://wa.me/9176331621">
@@ -243,7 +321,7 @@ const Detox = () => {
             </NavLink>
           </Col>
           <Col lg={{ span: 12 }} className={"mt-5"}>
-            <h1>Experience the Benifits</h1>
+            <h2 className="heading">Experience the benefits</h2>
           </Col>
           <Col lg={{ span: 4 }}>
             <img src={energy} className="yogaicon" />
@@ -321,68 +399,6 @@ const Detox = () => {
               Enjoy clearer skin, improved mood, and a renewed sense of
               vitality.
             </p>
-          </Col>
-        </Row>
-      </Container>
-
-      <Container>
-        <Row>
-          <Col lg="6" className="mt-5 mb-5">
-            <h1>Detox Diet</h1>
-            <Carousel
-              showArrows={true}
-              infiniteLoop={true}
-              autoPlay={true}
-              interval={3000}
-              showThumbs={false}
-            >
-              <div>
-                <img
-                  src={carousel1}
-                  alt="Image 1"
-                  style={{ height: "500px", width: "500px" }}
-                />
-              </div>
-              <div>
-                <img
-                  src={carousel2}
-                  alt="Image 1"
-                  style={{ height: "500px", width: "500px" }}
-                />
-                {/* <p className="legend">Legend 2</p> */}
-              </div>
-              <div>
-                <img
-                  src={carousel3}
-                  alt="Image 1"
-                  style={{ height: "500px", width: "500px" }}
-                />
-              </div>
-              {/* Add more images as needed */}
-            </Carousel>
-          </Col>
-
-          <Col lg="6" className="mt-5 mb-5">
-            <h1>FEED BACKS</h1>
-            <Carousel
-              showArrows={true}
-              infiniteLoop={true}
-              autoPlay={true}
-              interval={5000}
-              showThumbs={false}
-            >
-              <div>
-                <img src={fruits} alt="Image 1" />
-              </div>
-              <div>
-                <img src={fruits} alt="Image 1" />
-                {/* <p className="legend">Legend 2</p> */}
-              </div>
-              <div>
-                <img src={fruits} alt="Image 1" />
-              </div>
-              {/* Add more images as needed */}
-            </Carousel>
           </Col>
         </Row>
       </Container>

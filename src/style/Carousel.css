@@ -10,6 +10,19 @@
      height: 400px;
   }
 }
+
+.carousel-img1
+{
+  margin-top: 10px;
+   width: 100%;
+}
+@media (max-width: 768px) {
+  .carousel-img1
+  {
+     height: 400px;
+  }
+}
+
 .head
 {
   margin-top: -65px;

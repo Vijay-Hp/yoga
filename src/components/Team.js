@@ -29,8 +29,7 @@ const Team = () => {
       <Container>
         <Row>
           <Col lg={12} className="mt-5">
-            <h2>Our Team</h2>
-            <h6 className="sub-title"></h6>
+            <h2 className="heading">Our Team</h2>
           </Col>
         </Row>
 

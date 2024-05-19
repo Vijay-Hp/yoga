@@ -31,7 +31,7 @@ const Gallery = () => {
       <Container>
         <Row>
           <Col lg={12} className="mt-5">
-            <h2>Gallery</h2>
+            <h2 className="heading">Gallery</h2>
           </Col>
         </Row>
 

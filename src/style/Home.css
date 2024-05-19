@@ -282,7 +282,7 @@
    
     .headText {
       line-height: 2;
-      font-size: 32px;
+      font-size: 30px;
       color: #ab3c94;
       text-transform: uppercase;
       font-family: 'Montserrat', sans-serif;
@@ -309,8 +309,8 @@
       color: #121619;
       margin-left: 60px;
       font-family: 'Montserrat', sans-serif;
-      font-size: 40px;
-      font-weight: 600 !important;
+      font-size: 36px;
+      font-weight: 300 !important;
     }
     @media only screen and (max-width: 768px) {
       .mainHeading {
@@ -325,7 +325,7 @@
 
       .subHeading {
         line-height: 1;
-        font-size: 26px;
+        font-size: 24px;
         color: #ab3c94;
         text-transform: uppercase;
         margin-left: 60px;

@@ -28,10 +28,11 @@ import {
   Route,
 } from "react-router-dom";
 import Carousel from "./Carousel";
+import Carousel1 from "./Carousel1";
+
 import shape1 from "../assets/shape.png";
 import shape2 from "../assets/shape-1.png";
 import shape3 from "../assets/shape-2.png";
-import shape4 from "../assets/shape-3.png";
 
 function Home() {
   // image animations
@@ -75,7 +76,6 @@ function Home() {
   }, [animationsFinished]);
 
   const styles = {
-
     row: {
       width: "30em",
     },
@@ -96,8 +96,6 @@ function Home() {
                     src={shape2}
                     alt="shape"
                     className="img-responsive shape1"
-                    // height="6%"
-                    // width="6%"
                   />
                 </div>
                 <div
@@ -108,10 +106,6 @@ function Home() {
                     src={shape3}
                     alt="shape"
                     className="img-responsive shape2"
-
-                    // style={{ marginTop: "-100px" }}
-                    // height="20%"
-                    // width="20%"
                   />
                 </div>
                 <div
@@ -136,24 +130,29 @@ function Home() {
                     id="head_text"
                     style={{ textAlign: "left" }}
                   >
-                    <h3 className="headText">Online Yoga</h3>
+                    <h3
+                      className="headText"
+                      // style={{ fontFamily: "monstserrat" }}
+                      style={{ fontFamily: "Serif" }}
+                    >
+                      Online Yoga
+                    </h3>
                     <div className="row" style={styles.row}>
-                      <h1 className="mainHeading">
-                        Need physical &amp; <br /> mental wellness
+                      <h1
+                        className="mainHeading"
+                        // style={{ fontFamily: "monstserrat" }}
+                        style={{ fontFamily: "Helvetica" }}
+                      >
+                        Women physical &amp; <br /> mental wellness
                       </h1>
                     </div>
-                    <h3 className="subHeading">
+                    <h3
+                      className="subHeading"
+                      // style={{ fontFamily: "monstserrat" }}
+                      style={{ fontFamily: "Verdana" }}
+                    >
                       Join our online yoga classes!
                     </h3>
-                    {/* <h3 style={styles.headText}>Online Yoga</h3>
-                    <div className="row" style={styles.row}>
-                      <h1 style={styles.mainHeading}>
-                        Need physical &amp; <br /> mental wellness
-                      </h1>
-                    </div>
-                    <h3 style={styles.subHeading}>
-                      Join our online yoga classes!
-                    </h3> */}
                   </div>
                 </div>
               </div>
@@ -287,8 +286,6 @@ function Home() {
                   <a href="https://www.facebook.com/divineyogaforwomen">
                     <FaFacebookSquare className="team-icon" />
                   </a>
-                  {/* <FaTwitterSquare className="team-icon" /> */}
-                  {/* <FaLinkedin className="team-icon" /> */}
                 </Card.Footer>
               </Card>
             </CardGroup>
@@ -308,8 +305,6 @@ function Home() {
                   <a href="https://www.facebook.com/divineyogaforwomen">
                     <FaFacebookSquare className="team-icon" />
                   </a>
-                  {/* <FaTwitterSquare className="team-icon" /> */}
-                  {/* <FaLinkedin className="team-icon" /> */}
                 </Card.Footer>
               </Card>
             </CardGroup>
@@ -334,11 +329,15 @@ function Home() {
                   <a href="https://www.facebook.com/divineyogaforwomen">
                     <FaFacebookSquare className="team-icon" />
                   </a>
-                  {/* <FaTwitterSquare className="team-icon" /> */}
-                  {/* <FaLinkedin className="team-icon" /> */}
                 </Card.Footer>
               </Card>
             </CardGroup>
+          </Col>
+        </Row>
+
+        <Row>
+          <Col lg={{ span: 6, offset: 3 }} className="mb-5 mt-5">
+            <Carousel1 />
           </Col>
         </Row>
       </Container>

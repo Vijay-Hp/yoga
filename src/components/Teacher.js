@@ -25,7 +25,9 @@ const Teacher = () => {
       <Container>
         <Row>
           <Col lg={12} className="mt-5">
-            <h2>Online 200 Hours Yoga Teacher Training Course</h2>
+            <h2 className="heading">
+              Online 200 Hours Yoga Teacher Training Course
+            </h2>
             <h5 className="sub-title">
               <i>
                 Welcome to our comprehensive Online 200 Hours Yoga Teacher
@@ -41,7 +43,7 @@ const Teacher = () => {
 
         <Row>
           <Col lg={12} className="mt-5">
-            <h2>Course Overview</h2>
+            <h2 className="heading">Course Overview</h2>
             <h5 className="sub-title">
               <i>
                 Our 200 Hours Yoga Teacher Training Course is a comprehensive
@@ -55,7 +57,7 @@ const Teacher = () => {
           </Col>
         </Row>
         <Row>
-          <h2 className="mt-4 mb-4">What You'll Learn</h2>
+          <h2 className="mt-4 mb-4 heading">What You'll Learn</h2>
           <Col lg={4}>
             <div className="box3">
               <p className="box-title3">
@@ -129,7 +131,7 @@ const Teacher = () => {
         </Row>
 
         <Row>
-          <h2 className="mt-4 mb-4">Course Features</h2>
+          <h2 className="mt-4 mb-4 heading">Course Features</h2>
           <Col lg={4}>
             <div className="box4">
               <p className="box-title4">
@@ -171,7 +173,7 @@ const Teacher = () => {
 
         <Row>
           <Col lg={12} className="mt-2">
-            <h2>Who Can Join</h2>
+            <h2 className="heading">Who Can Join</h2>
             <h5 className="sub-title"></h5>
             <ol>
               <li>

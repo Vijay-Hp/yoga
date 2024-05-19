@@ -100,8 +100,44 @@
     text-align: center;
     font-size: 16px;
     padding-top: 30px;
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: 40px;
+    padding-right: 40px;
     color: white;
   }  
 }
+
+
+.heading
+{
+  font-family: 'Montserrat';
+ font-variant:small-caps;
+}
+/* 
+.heading1
+{
+  font-family: 'Serif ';
+ font-style: oblique;
+}
+
+.heading2
+{
+  font-family: Tahoma, Verdana, sans-serif;
+ 
+}
+
+.heading3
+{
+  font-family: Arial, Helvetica, sans-serif;
+ 
+}
+
+.heading4
+{
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.heading5
+{
+  
+font-family: Tahoma, sans-serif;
+} */
