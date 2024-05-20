@@ -118,3 +118,9 @@
 }
 }
 
+@media (max-width: 768px) {
+  .address
+{
+   margin-left: -50px !important;
+}
+}

@@ -48,55 +48,55 @@ const Testimonial = () => {
             <img src={feed1} height={250} />
           </Col>
           <Col lg={3}>
-            <img src={feed2} height={250} />
+            <img src={feed2} height={250} className="gallery" />
           </Col>
           <Col lg={3}>
-            <img src={feed3} height={250} />
+            <img src={feed3} height={250} className="gallery" />
           </Col>
           <Col lg={3}>
-            <img src={feed4} height={250} />
-          </Col>
-        </Row>
-        <Row className="mt-3">
-          <Col lg={3}>
-            <img src={detox1} height={250} />
-          </Col>
-          <Col lg={3}>
-            <img src={detox2} height={250} />
-          </Col>
-          <Col lg={3}>
-            <img src={detox3} height={250} />
-          </Col>
-          <Col lg={3}>
-            <img src={detox4} height={250} />
+            <img src={feed4} height={250} className="gallery" />
           </Col>
         </Row>
         <Row className="mt-3">
           <Col lg={3}>
-            <img src={review1} height={250} />
+            <img src={detox1} height={250} className="gallery" />
           </Col>
           <Col lg={3}>
-            <img src={review2} height={250} />
+            <img src={detox2} height={250} className="gallery" />
           </Col>
           <Col lg={3}>
-            <img src={review3} height={250} />
+            <img src={detox3} height={250} className="gallery" />
           </Col>
           <Col lg={3}>
-            <img src={review4} height={250} />
+            <img src={detox4} height={250} className="gallery" />
           </Col>
         </Row>
         <Row className="mt-3">
           <Col lg={3}>
-            <img src={review5} height={250} />
+            <img src={review1} height={250} className="gallery" />
           </Col>
           <Col lg={3}>
-            <img src={review6} height={250} />
+            <img src={review2} height={250} className="gallery" />
           </Col>
           <Col lg={3}>
-            <img src={review7} height={250} />
+            <img src={review3} height={250} className="gallery" />
           </Col>
           <Col lg={3}>
-            <img src={review8} height={250} />
+            <img src={review4} height={250} className="gallery" />
+          </Col>
+        </Row>
+        <Row className="mt-3">
+          <Col lg={3}>
+            <img src={review5} height={250} className="gallery" />
+          </Col>
+          <Col lg={3}>
+            <img src={review6} height={250} className="gallery" />
+          </Col>
+          <Col lg={3}>
+            <img src={review7} height={250} className="gallery" />
+          </Col>
+          <Col lg={3}>
+            <img src={review8} height={250} className="gallery" />
           </Col>
         </Row>
       </Container>
@@ -105,28 +105,14 @@ const Testimonial = () => {
         <Row className="mb-5 mt-3">
           <Col lg={12}>
             <div className="parallax">
-              <p
-                className="parallax-text"
-                // style={{
-                //   textAlign: "center",
-                //   fontSize: "25px",
-                //   paddingTop: "50px",
-                //   paddingLeft: "150px",
-                //   paddingRight: "150px",
-                //   color: "white",
-                // }}
-              >
+              <p className="parallax-text">
                 Join our community of women committed to holistic wellness.
                 Whether you're seeking fitness, hormone balance, fertility
                 support, weight management, postpartum recovery, core strength,
                 or relief from PCOS symptoms, our online yoga sessions offer a
                 nurturing and empowering experience.
               </p>
-              {/* <NavLink to="https://www.instagram.com/divine_yoga_for_women/">
-                <button className="btn2" style={{ marginTop: "40px" }}>
-                  Enquire Now
-                </button>
-              </NavLink> */}
+
               <NavLink to="https://www.instagram.com/divine_yoga_for_women/">
                 <img src={enquiry} height="100" width="250" />
               </NavLink>

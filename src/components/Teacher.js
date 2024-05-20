@@ -244,55 +244,55 @@ const Teacher = () => {
             <img src={teacher1} height={300} />
           </Col>
           <Col lg={3}>
-            <img src={teacher2} height={300} />
+            <img src={teacher2} height={300} className="gallery" />
           </Col>
           <Col lg={3}>
-            <img src={teacher3} height={300} />
+            <img src={teacher3} height={300} className="gallery" />
           </Col>
           <Col lg={3}>
-            <img src={teacher4} height={300} />
-          </Col>
-        </Row>
-        <Row className="mt-3">
-          <Col lg={3}>
-            <img src={teacher5} height={300} />
-          </Col>
-          <Col lg={3}>
-            <img src={teacher6} height={300} />
-          </Col>
-          <Col lg={3}>
-            <img src={teacher7} height={300} />
-          </Col>
-          <Col lg={3}>
-            <img src={teacher8} height={300} />
+            <img src={teacher4} height={300} className="gallery" />
           </Col>
         </Row>
         <Row className="mt-3">
           <Col lg={3}>
-            <img src={teacher9} height={300} />
+            <img src={teacher5} height={300} className="gallery" />
           </Col>
           <Col lg={3}>
-            <img src={teacher10} height={300} />
+            <img src={teacher6} height={300} className="gallery" />
           </Col>
           <Col lg={3}>
-            <img src={teacher11} height={300} />
+            <img src={teacher7} height={300} className="gallery" />
           </Col>
           <Col lg={3}>
-            <img src={teacher12} height={300} />
+            <img src={teacher8} height={300} className="gallery" />
           </Col>
         </Row>
         <Row className="mt-3">
           <Col lg={3}>
-            <img src={teacher13} height={300} />
+            <img src={teacher9} height={300} className="gallery" />
           </Col>
           <Col lg={3}>
-            <img src={teacher14} height={300} />
+            <img src={teacher10} height={300} className="gallery" />
           </Col>
           <Col lg={3}>
-            <img src={teacher15} height={300} />
+            <img src={teacher11} height={300} className="gallery" />
           </Col>
           <Col lg={3}>
-            <img src={teacher16} height={300} />
+            <img src={teacher12} height={300} className="gallery" />
+          </Col>
+        </Row>
+        <Row className="mt-3">
+          <Col lg={3}>
+            <img src={teacher13} height={300} className="gallery" />
+          </Col>
+          <Col lg={3}>
+            <img src={teacher14} height={300} className="gallery" />
+          </Col>
+          <Col lg={3}>
+            <img src={teacher15} height={300} className="gallery" />
+          </Col>
+          <Col lg={3}>
+            <img src={teacher16} height={300} className="gallery" />
           </Col>
         </Row>
 

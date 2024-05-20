@@ -25,15 +25,7 @@ function Navbar1() {
               <NavLink to="/" className="nav-link" activeClassName="active">
                 HOME
               </NavLink>
-              {/* <NavDropdown title="OUR PRODUCTS" id="basic-nav-dropdown">
-                <NavDropdown.Item
-                  as={NavLink}
-                  to="/products/sugar"
-                  activeClassName="active"
-                >
-                  Online Yoga
-                </NavDropdown.Item>
-              </NavDropdown> */}
+
               <NavLink
                 to="/contact"
                 className="nav-link"

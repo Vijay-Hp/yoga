@@ -268,3 +268,10 @@
 .box4:hover .yogaicon1 {
   color: white;
 }
+
+@media (max-width: 768px) {
+  .gallery
+{
+  margin-top: 20px;
+}
+} 

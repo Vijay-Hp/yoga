@@ -28,9 +28,15 @@ function Navbar1() {
   const handleMouseLeave = () => {
     setIsSubMenuOpen(false);
   };
+
+  const [expanded, setExpanded] = useState(false);
+
+  const handleToggle = () => setExpanded(!expanded);
+  const handleSelect = () => setExpanded(false);
   return (
     <Router>
       <Navbar
+        expanded={expanded}
         expand="lg"
         style={{
           backgroundColor: "#ab3c94",
@@ -44,16 +50,23 @@ function Navbar1() {
           <Navbar.Toggle
             aria-controls="basic-navbar-nav"
             className="navbar-toggler-icon"
+            onClick={handleToggle}
           />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <NavLink to="/" className="nav-link" activeClassName="active">
+              <NavLink
+                to="/"
+                className="nav-link"
+                activeClassName="active"
+                onClick={handleSelect}
+              >
                 HOME
               </NavLink>
               <NavLink
                 to="/onlineyoga"
                 className="nav-link"
                 activeClassName="active"
+                onClick={handleSelect}
               >
                 ONLINE YOGA
               </NavLink>
@@ -61,6 +74,7 @@ function Navbar1() {
                 to="/detox"
                 className="nav-link"
                 activeClassName="active"
+                onClick={handleSelect}
               >
                 DETOX DIET
               </NavLink>
@@ -68,6 +82,7 @@ function Navbar1() {
                 to="/teacher"
                 className="nav-link"
                 activeClassName="active"
+                onClick={handleSelect}
               >
                 TEACHER TRAINING
               </NavLink>
@@ -76,6 +91,7 @@ function Navbar1() {
                 to="/testimonial"
                 className="nav-link"
                 activeClassName="active"
+                onClick={handleSelect}
               >
                 TESTIMONIALS
               </NavLink>
@@ -84,16 +100,23 @@ function Navbar1() {
                 to="/gallery"
                 className="nav-link"
                 activeClassName="active"
+                onClick={handleSelect}
               >
                 GALLERY
               </NavLink>
-              <NavLink to="/team" className="nav-link" activeClassName="active">
+              <NavLink
+                to="/team"
+                className="nav-link"
+                activeClassName="active"
+                onClick={handleSelect}
+              >
                 OUR TEAM
               </NavLink>
               <NavLink
                 to="https://www.instagram.com/divine_yoga_for_women/"
                 className="nav-link"
                 activeClassName="active"
+                onClick={handleSelect}
               >
                 COMMUNITY
               </NavLink>

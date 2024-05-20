@@ -12,6 +12,9 @@ import {
 } from "react-icons/fa";
 import "../style/Footer.css";
 const Footer = () => {
+  const handleLinkClick = () => {
+    window.scrollTo(0, 0);
+  };
   return (
     <footer className="text-dark py-4" style={{ backgroundColor: "#ab3c94" }}>
       <Container>
@@ -29,6 +32,7 @@ const Footer = () => {
                 marginTop: "10px",
                 fontSize: "17px",
               }}
+              onClick={handleLinkClick}
             >
               <span
                 style={{
@@ -52,6 +56,7 @@ const Footer = () => {
                 marginTop: "-10px",
                 fontSize: "17px",
               }}
+              onClick={handleLinkClick}
             >
               <span
                 style={{
@@ -75,6 +80,7 @@ const Footer = () => {
                 marginTop: "-10px",
                 fontSize: "17px",
               }}
+              onClick={handleLinkClick}
             >
               <span
                 style={{
@@ -99,6 +105,7 @@ const Footer = () => {
                 marginTop: "-10px",
                 fontSize: "17px",
               }}
+              onClick={handleLinkClick}
             >
               <span
                 style={{
@@ -126,6 +133,7 @@ const Footer = () => {
                 marginTop: "10px",
                 fontSize: "17px",
               }}
+              onClick={handleLinkClick}
             >
               <span
                 style={{
@@ -149,6 +157,7 @@ const Footer = () => {
                 marginTop: "-10px",
                 fontSize: "17px",
               }}
+              onClick={handleLinkClick}
             >
               <span
                 style={{
@@ -172,6 +181,7 @@ const Footer = () => {
                 marginTop: "-10px",
                 fontSize: "17px",
               }}
+              onClick={handleLinkClick}
             >
               <span
                 style={{
@@ -191,7 +201,10 @@ const Footer = () => {
             <h5>
               <span>Get In Touch</span>
             </h5>
-            <div style={{ display: "flex", alignItems: "center" }}>
+            <div
+              style={{ display: "flex", alignItems: "center" }}
+              className="address"
+            >
               <FaMapMarkerAlt className="add-icon" />
               <div>
                 <p style={{ margin: 0, textAlign: "left", color: "white" }}>
@@ -211,15 +224,28 @@ const Footer = () => {
             <hr style={{ color: "#8b8b8b" }} />
             <p>
               <FaPhoneAlt className="phone-icon" />
+
               <span style={{ color: "white" }}>
-                +91-94448 00697, +91-70108 42898
+                <a
+                  href="tel:94448 00697"
+                  style={{ color: "white", textDecoration: "none" }}
+                >
+                  +91-94448 00697,
+                  <a
+                    href="tel:70108 42898"
+                    style={{ color: "white", textDecoration: "none" }}
+                  >
+                    <span style={{ color: "white" }}>+91-70108 42898</span>
+                  </a>
+                </a>
               </span>
             </p>
+
             <hr style={{ color: "#8b8b8b" }} />
             <p>
               <FaEnvelope className="mail-icon" />
               <a
-                href="mailto:info@umaexports.net.in"
+                href="mailto:divineyogaforwomen@gmail.com"
                 style={{ color: "white", textDecoration: "none" }}
               >
                 divineyogaforwomen@gmail.com
@@ -264,7 +290,7 @@ const Footer = () => {
             </a>
             <a
               className="phone"
-              href="tel:+1234567890"
+              href="tel:9176331621"
               target="_blank"
               rel="noopener noreferrer"
             >
