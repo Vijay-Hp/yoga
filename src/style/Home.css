@@ -80,7 +80,7 @@
 {
     background-color: #ab3c94 !important;
     color: white;
-    height: 280px !important;
+    height: 350px !important;
     margin-bottom: 30px !important;
 }
   }
@@ -135,7 +135,7 @@
     {
         background-color:white !important;
         color: #ab3c94 !important;
-        height: 300px !important;
+        height: 330px !important;
         margin-bottom: 30px;
         box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
         border-radius: 30px;
@@ -249,7 +249,15 @@
     margin-top: 55%;
     z-index: 2;
   }
-
+  @media only screen and (max-width: 768px) {
+    #head_text {
+      color: #ab3c94;
+      height: 20em;
+      width: 25em;
+      margin-top: 70%;
+      z-index: 2;
+    }
+     }
 /* background shape */
  .shape1
  {
@@ -318,7 +326,7 @@
         color: #121619;
         margin-left: 40px;
         font-family: 'Montserrat', sans-serif;
-        font-size: 40px;
+        font-size: 35px;
         font-weight: 500;
       }
       }
@@ -341,7 +349,7 @@
           text-transform: uppercase;
           margin-left: 40px;
           font-family: 'Montserrat', sans-serif;
-          margin-top: 20px;
+          margin-top: 24px;
         }
           }
   

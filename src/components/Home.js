@@ -130,28 +130,19 @@ function Home() {
                     id="head_text"
                     style={{ textAlign: "left" }}
                   >
-                    <h3
-                      className="headText"
-                      // style={{ fontFamily: "monstserrat" }}
-                      style={{ fontFamily: "Serif" }}
-                    >
+                    <h3 className="headText" style={{ fontFamily: "Serif" }}>
                       Online Yoga
                     </h3>
                     <div className="row" style={styles.row}>
                       <h1
                         className="mainHeading"
-                        // style={{ fontFamily: "monstserrat" }}
                         style={{ fontFamily: "Serif" }}
                       >
                         Women physical &amp; <br /> mental wellness
                       </h1>
                     </div>
-                    <h3
-                      className="subHeading"
-                      // style={{ fontFamily: "monstserrat" }}
-                      style={{ fontFamily: "Serif" }}
-                    >
-                      Join our online yoga classes!
+                    <h3 className="subHeading" style={{ fontFamily: "Serif" }}>
+                      JOIN OUR CLASSES TODAY!
                     </h3>
                   </div>
                 </div>
