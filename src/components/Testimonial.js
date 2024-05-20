@@ -9,25 +9,23 @@ import { NavLink } from "react-router-dom";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Hormaone from "../assets/hormones.png";
-import Thumble from "../assets/dumbbell.png";
-import Pragancy from "../assets/pregnant.png";
-import Weight from "../assets/weight-loss.png";
+import feed1 from "../assets/review/onlinefeed (1).jpeg";
+import feed2 from "../assets/review/onlinefeed (2).jpeg";
+import feed3 from "../assets/review/onlinefeed (3).jpeg";
+import feed4 from "../assets/review/onlinefeed (4).jpeg";
 import enquiry from "../assets/enquiry (1).gif";
-const testimonials = [
-  {
-    id: 1,
-    name: "John Doe",
-    comment: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-  },
-  {
-    id: 2,
-    name: "Jane Smith",
-    comment:
-      "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  },
-  // Add more testimonials as needed
-];
+import detox1 from "../assets/review/detox (1).jpeg";
+import detox2 from "../assets/review/detox (2).jpeg";
+import detox3 from "../assets/review/detox (3).jpeg";
+import detox4 from "../assets/review/detox (4).jpeg";
+import review1 from "../assets/review/review (1).jpeg";
+import review2 from "../assets/review/review (2).jpeg";
+import review3 from "../assets/review/review (3).jpeg";
+import review4 from "../assets/review/review (4).jpeg";
+import review5 from "../assets/review/review (5).jpeg";
+import review6 from "../assets/review/review (6).jpeg";
+import review7 from "../assets/review/review (7).jpeg";
+import review8 from "../assets/review/review (8).jpeg";
 
 const Testimonial = () => {
   const settings = {
@@ -42,275 +40,69 @@ const Testimonial = () => {
   return (
     <>
       <Container>
-        {/* <Row>
-          <Col lg={12} className="mt-5">
-            <h2>Testimonials</h2>
-            <h5 className="sub-title"></h5>
-          </Col>
-        </Row> */}
-
-        {/* <Row>
-          <Col lg={{ span: 4 }}>
-            <img src={Hormaone} className="yogaicon" />
-            <p
-              className="phoneno"
-              style={{
-                fontSize: "15px",
-                marginTop: "-50px",
-                textAlign: "left",
-                marginLeft: "100px",
-              }}
-            >
-              <b>Hormone Balancing</b>
-            </p>
-            <p
-              style={{
-                marginLeft: "53px",
-                color: "#8b8b8b",
-                fontSize: "15px",
-                marginLeft: "100px",
-                textAlign: "left",
-              }}
-            >
-              Restore hormonal harmony with yoga practices targeting the
-              endocrine system, promoting balance and well-being.
-            </p>
-          </Col>
-          <Col lg={{ span: 4 }}>
-            <img src={Thumble} className="yogaicon" />
-            <p
-              className="phoneno"
-              style={{
-                fontSize: "15px",
-                marginTop: "-50px",
-                textAlign: "left",
-                marginLeft: "100px",
-              }}
-            >
-              <b>Regular Fitness</b>
-            </p>
-            <p
-              style={{
-                marginLeft: "53px",
-                color: "#8b8b8b",
-                fontSize: "15px",
-                marginLeft: "100px",
-                textAlign: "left",
-              }}
-            >
-              Stay active and energized with our online yoga classes focused on
-              building strength, improving flexibility, and enhancing overall
-              fitness levels.
-            </p>
-          </Col>
-          <Col lg={{ span: 4 }}>
-            <img src={Pragancy} className="yogaicon" />
-            <p
-              className="phoneno"
-              style={{
-                fontSize: "15px",
-                marginTop: "-50px",
-                textAlign: "left",
-                marginLeft: "100px",
-              }}
-            >
-              <b>Pre-pregnancy Preparation</b>
-            </p>
-            <p
-              style={{
-                marginLeft: "53px",
-                color: "#8b8b8b",
-                fontSize: "15px",
-                marginLeft: "100px",
-                textAlign: "left",
-              }}
-            >
-              Prepare your body and mind for pregnancy with specialized yoga
-              sessions designed to enhance fertility, optimize reproductive
-              health, and cultivate a nurturing environment for conception.
-            </p>
-          </Col>
-          <Col lg={{ span: 4 }}>
-            <img src={Weight} className="yogaicon" />
-            <p
-              className="phoneno"
-              style={{
-                fontSize: "15px",
-                marginTop: "-50px",
-                textAlign: "left",
-                marginLeft: "100px",
-              }}
-            >
-              <b>Weight Loss</b>
-            </p>
-            <p
-              style={{
-                marginLeft: "53px",
-                color: "#8b8b8b",
-                fontSize: "15px",
-                marginLeft: "100px",
-                textAlign: "left",
-              }}
-            >
-              Embrace a holistic approach to weight management through yoga
-              practices that stimulate metabolism, promote fat burning, and
-              support healthy lifestyle habits.
-            </p>
-          </Col>
-          <Col lg={{ span: 4 }}>
-            <PhoneOutlinedIcon className="yogaicon" />
-            <p
-              className="phoneno"
-              style={{
-                fontSize: "15px",
-                marginTop: "-50px",
-                textAlign: "left",
-                marginLeft: "100px",
-              }}
-            >
-              <b>Postpartum Fitness</b>
-            </p>
-            <p
-              style={{
-                marginLeft: "53px",
-                color: "#8b8b8b",
-                fontSize: "15px",
-                marginLeft: "100px",
-                textAlign: "left",
-              }}
-            >
-              Rejuvenate and rebuild after childbirth with gentle yet effective
-              yoga sessions tailored to postpartum recovery. Strengthen core
-              muscles, improve flexibility, and promote emotional well-being.
-            </p>
-          </Col>
-          <Col lg={{ span: 4 }}>
-            <PhoneOutlinedIcon className="yogaicon" />
-            <p
-              className="phoneno"
-              style={{
-                fontSize: "15px",
-                marginTop: "-50px",
-                textAlign: "left",
-                marginLeft: "100px",
-              }}
-            >
-              <b>Core Strengthening</b>
-            </p>
-            <p
-              style={{
-                marginLeft: "53px",
-                color: "#8b8b8b",
-                fontSize: "15px",
-                marginLeft: "100px",
-                textAlign: "left",
-              }}
-            >
-              Develop a strong and stable core with targeted yoga exercises that
-              enhance abdominal strength, improve posture, and support overall
-              body alignment.
-            </p>
-          </Col>
-          <Col lg={{ span: 4 }}>
-            <PhoneOutlinedIcon className="yogaicon" />
-            <p
-              className="phoneno"
-              style={{
-                fontSize: "15px",
-                marginTop: "-50px",
-                textAlign: "left",
-                marginLeft: "100px",
-              }}
-            >
-              <b>Belly Fat Reduction</b>
-            </p>
-            <p
-              style={{
-                marginLeft: "53px",
-                color: "#8b8b8b",
-                fontSize: "15px",
-                marginLeft: "100px",
-                textAlign: "left",
-              }}
-            >
-              Target stubborn belly fat with yoga sequences aimed at toning the
-              abdominal region and promoting fat loss.
-            </p>
-          </Col>
-          <Col lg={{ span: 4 }}>
-            <PhoneOutlinedIcon className="yogaicon" />
-            <p
-              className="phoneno"
-              style={{
-                fontSize: "15px",
-                marginTop: "-50px",
-                textAlign: "left",
-                marginLeft: "100px",
-              }}
-            >
-              <b>PCOS (Polycystic Ovary Syndrome) </b>
-            </p>
-            <p
-              style={{
-                marginLeft: "53px",
-                color: "#8b8b8b",
-                fontSize: "15px",
-                marginLeft: "100px",
-                textAlign: "left",
-              }}
-            >
-              Manage symptoms of PCOS through yoga practices focused on
-              improving insulin sensitivity, reducing stress, and supporting
-              reproductive health.
-            </p>
-          </Col>
-          <Col lg={{ span: 4 }}>
-            <PhoneOutlinedIcon className="yogaicon" />
-            <p
-              className="phoneno"
-              style={{
-                fontSize: "15px",
-                marginTop: "-50px",
-                textAlign: "left",
-                marginLeft: "100px",
-              }}
-            >
-              <b>Interactive and Fun</b>
-            </p>
-            <p
-              style={{
-                marginLeft: "53px",
-                color: "#8b8b8b",
-                fontSize: "15px",
-                marginLeft: "100px",
-                textAlign: "left",
-              }}
-            >
-              Engage in group activities, challenges, and discussions that make
-              your yoga journey enjoyable and enriching.
-            </p>
-          </Col>
-        </Row> */}
-      </Container>
-
-      <Container>
         <Row>
-          <Col lg="12" className="mt-5 mb-5">
-            <h2 className="heading">Testimonial</h2>
-            <Slider {...settings} className="mt-5">
-              {testimonials.map((testimonial) => (
-                <div key={testimonial.id}>
-                  <h3 style={{ color: "green" }}>{testimonial.name}</h3>
-                  <p>{testimonial.comment}</p>
-                </div>
-              ))}
-            </Slider>
+          <Col lg="12" className="mt-5 ">
+            <h2 className="heading">Testimonials</h2>
+          </Col>
+          <Col lg={3}>
+            <img src={feed1} height={250} />
+          </Col>
+          <Col lg={3}>
+            <img src={feed2} height={250} />
+          </Col>
+          <Col lg={3}>
+            <img src={feed3} height={250} />
+          </Col>
+          <Col lg={3}>
+            <img src={feed4} height={250} />
+          </Col>
+        </Row>
+        <Row className="mt-3">
+          <Col lg={3}>
+            <img src={detox1} height={250} />
+          </Col>
+          <Col lg={3}>
+            <img src={detox2} height={250} />
+          </Col>
+          <Col lg={3}>
+            <img src={detox3} height={250} />
+          </Col>
+          <Col lg={3}>
+            <img src={detox4} height={250} />
+          </Col>
+        </Row>
+        <Row className="mt-3">
+          <Col lg={3}>
+            <img src={review1} height={250} />
+          </Col>
+          <Col lg={3}>
+            <img src={review2} height={250} />
+          </Col>
+          <Col lg={3}>
+            <img src={review3} height={250} />
+          </Col>
+          <Col lg={3}>
+            <img src={review4} height={250} />
+          </Col>
+        </Row>
+        <Row className="mt-3">
+          <Col lg={3}>
+            <img src={review5} height={250} />
+          </Col>
+          <Col lg={3}>
+            <img src={review6} height={250} />
+          </Col>
+          <Col lg={3}>
+            <img src={review7} height={250} />
+          </Col>
+          <Col lg={3}>
+            <img src={review8} height={250} />
           </Col>
         </Row>
       </Container>
 
       <Container fluid>
-        <Row className="mb-5">
+        <Row className="mb-5 mt-3">
           <Col lg={12}>
             <div className="parallax">
               <p

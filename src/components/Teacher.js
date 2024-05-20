@@ -19,6 +19,36 @@ import CastForEducationIcon from "@mui/icons-material/CastForEducation";
 import SupportIcon from "@mui/icons-material/Support";
 import LiveTvIcon from "@mui/icons-material/LiveTv";
 import WorkspacePremiumIcon from "@mui/icons-material/WorkspacePremium";
+import teacher1 from "../assets/teacher/teacher (1).jpeg";
+import teacher2 from "../assets/teacher/teacher (2).jpeg";
+import teacher3 from "../assets/teacher/teacher (3).jpeg";
+import teacher4 from "../assets/teacher/teacher (4).jpeg";
+import teacher5 from "../assets/teacher/teacher (5).jpeg";
+import teacher6 from "../assets/teacher/teacher (6).jpeg";
+import teacher7 from "../assets/teacher/teacher (7).jpeg";
+import teacher8 from "../assets/teacher/teacher (8).jpeg";
+import teacher9 from "../assets/teacher/teacher (9).jpeg";
+import teacher10 from "../assets/teacher/teacher (10).jpeg";
+import teacher11 from "../assets/teacher/teacher (11).jpeg";
+import teacher12 from "../assets/teacher/teacher (12).jpeg";
+import teacher13 from "../assets/teacher/teacher (13).jpeg";
+import teacher14 from "../assets/teacher/teacher (14).jpeg";
+import teacher15 from "../assets/teacher/teacher (15).jpeg";
+import teacher16 from "../assets/teacher/teacher (16).jpeg";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import feed1 from "../assets/teacher/feedback/feedback (1).jpeg";
+import feed2 from "../assets/teacher/feedback/feedback (2).jpeg";
+import feed3 from "../assets/teacher/feedback/feedback (3).jpeg";
+import feed4 from "../assets/teacher/feedback/feedback (4).jpeg";
+import feed5 from "../assets/teacher/feedback/feedback (5).jpeg";
+import feed6 from "../assets/teacher/feedback/feedback (6).jpeg";
+import feed7 from "../assets/teacher/feedback/feedback (7).jpeg";
+import feed8 from "../assets/teacher/feedback/feedback (8).jpeg";
+import feed9 from "../assets/teacher/feedback/feedback (9).jpeg";
+import feed10 from "../assets/teacher/feedback/feedback (10).jpeg";
+import feed11 from "../assets/teacher/feedback/feedback (11).jpeg";
+import feed12 from "../assets/teacher/feedback/feedback (12).jpeg";
 const Teacher = () => {
   return (
     <>
@@ -207,8 +237,116 @@ const Teacher = () => {
             </NavLink>
           </Col>
         </Row>
-      </Container>
 
+        <Row>
+          <h2 className="heading">Gallery</h2>
+          <Col lg={3}>
+            <img src={teacher1} height={300} />
+          </Col>
+          <Col lg={3}>
+            <img src={teacher2} height={300} />
+          </Col>
+          <Col lg={3}>
+            <img src={teacher3} height={300} />
+          </Col>
+          <Col lg={3}>
+            <img src={teacher4} height={300} />
+          </Col>
+        </Row>
+        <Row className="mt-3">
+          <Col lg={3}>
+            <img src={teacher5} height={300} />
+          </Col>
+          <Col lg={3}>
+            <img src={teacher6} height={300} />
+          </Col>
+          <Col lg={3}>
+            <img src={teacher7} height={300} />
+          </Col>
+          <Col lg={3}>
+            <img src={teacher8} height={300} />
+          </Col>
+        </Row>
+        <Row className="mt-3">
+          <Col lg={3}>
+            <img src={teacher9} height={300} />
+          </Col>
+          <Col lg={3}>
+            <img src={teacher10} height={300} />
+          </Col>
+          <Col lg={3}>
+            <img src={teacher11} height={300} />
+          </Col>
+          <Col lg={3}>
+            <img src={teacher12} height={300} />
+          </Col>
+        </Row>
+        <Row className="mt-3">
+          <Col lg={3}>
+            <img src={teacher13} height={300} />
+          </Col>
+          <Col lg={3}>
+            <img src={teacher14} height={300} />
+          </Col>
+          <Col lg={3}>
+            <img src={teacher15} height={300} />
+          </Col>
+          <Col lg={3}>
+            <img src={teacher16} height={300} />
+          </Col>
+        </Row>
+
+        <Row>
+          <Col lg={{ span: 6, offset: 3 }} className="mt-5 mb-5">
+            <h2 className="heading">Feedbacks</h2>
+            <Carousel
+              showArrows={false}
+              infiniteLoop={true}
+              autoPlay={true}
+              interval={3000}
+              showThumbs={false}
+            >
+              <div>
+                <img src={feed1} alt="Image 1" />
+              </div>
+              <div>
+                <img src={feed2} alt="Image 1" />
+              </div>
+              <div>
+                <img src={feed3} alt="Image 1" />
+              </div>
+              <div>
+                <img src={feed4} alt="Image 1" />
+              </div>
+              <div>
+                <img src={feed5} alt="Image 1" />
+              </div>
+
+              <div>
+                <img src={feed6} alt="Image 1" />
+              </div>
+              <div>
+                <img src={feed7} alt="Image 1" />
+              </div>
+              <div>
+                <img src={feed8} alt="Image 1" />
+              </div>
+              <div>
+                <img src={feed9} alt="Image 1" />
+              </div>
+              <div>
+                <img src={feed10} alt="Image 1" />
+              </div>
+              <div>
+                <img src={feed11} alt="Image 1" />
+              </div>
+              <div>
+                <img src={feed12} alt="Image 1" />
+              </div>
+            </Carousel>
+          </Col>
+        </Row>
+      </Container>
       <Footer />
     </>
   );

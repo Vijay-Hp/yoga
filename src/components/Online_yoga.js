@@ -9,6 +9,8 @@ import { NavLink } from "react-router-dom";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Hormaone from "../assets/hormones.png";
 import Thumble from "../assets/dumbbell.png";
 import Pragancy from "../assets/pregnant.png";
@@ -23,6 +25,11 @@ import pcos from "../assets/pain_8902284.png";
 import enquiry from "../assets/enquiry (1).gif";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import { FaWhatsapp } from "react-icons/fa";
+import feed1 from "../assets/review/onlinefeed (1).jpeg";
+import feed2 from "../assets/review/onlinefeed (2).jpeg";
+import feed3 from "../assets/review/onlinefeed (3).jpeg";
+import feed4 from "../assets/review/onlinefeed (4).jpeg";
+import feed5 from "../assets/review/onlinefeed (5).jpeg";
 
 const testimonials = [
   {
@@ -416,15 +423,38 @@ const Onlineyoga = () => {
 
       <Container>
         <Row>
-          <Col lg="12" className="mt-lg-2 mb-5">
-            <h2 className="heading">Testimonial</h2>
+          <Col lg={{ span: 6, offset: 3 }} className="mb-5">
+            <h2 className="heading">Feedbacks</h2>
+            <Carousel
+              showArrows={false}
+              infiniteLoop={true}
+              autoPlay={true}
+              interval={3000}
+              showThumbs={false}
+            >
+              <div>
+                <img src={feed1} alt="Image 1" />
+              </div>
+              <div>
+                <img src={feed2} alt="Image 1" />
+              </div>
+              <div>
+                <img src={feed3} alt="Image 1" />
+              </div>
+              <div>
+                <img src={feed4} alt="Image 1" />
+              </div>
+              <div>
+                <img src={feed5} alt="Image 1" />
+              </div>
+            </Carousel>
 
-            {testimonials.map((testimonial) => (
+            {/* {testimonials.map((testimonial) => (
               <div key={testimonial.id}>
                 <h3 style={{ color: "green" }}>{testimonial.name}</h3>
                 <p>{testimonial.comment}</p>
               </div>
-            ))}
+            ))} */}
             {/* <img src={testi2} height={800} width={800} /> */}
           </Col>
         </Row>

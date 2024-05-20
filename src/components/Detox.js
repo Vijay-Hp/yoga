@@ -29,6 +29,11 @@ import stomach from "../assets/stomach_10916924.png";
 import energy from "../assets/energy_11245496.png";
 import share from "../assets/sharing_10879318.png";
 import join from "../assets/join1.gif";
+import feed1 from "../assets/review/detox (1).jpeg";
+import feed2 from "../assets/review/detox (2).jpeg";
+import feed3 from "../assets/review/detox (3).jpeg";
+import feed4 from "../assets/review/detox (4).jpeg";
+import feed5 from "../assets/review/detox (5).jpeg";
 
 const Detox = () => {
   const settings = {
@@ -290,20 +295,24 @@ const Detox = () => {
               showArrows={false}
               infiniteLoop={true}
               autoPlay={true}
-              interval={5000}
+              interval={3000}
               showThumbs={false}
             >
               <div>
-                <img src={fruits} alt="Image 1" />
+                <img src={feed1} alt="Image 1" />
               </div>
               <div>
-                <img src={fruits} alt="Image 1" />
-                {/* <p className="legend">Legend 2</p> */}
+                <img src={feed2} alt="Image 1" />
               </div>
               <div>
-                <img src={fruits} alt="Image 1" />
+                <img src={feed3} alt="Image 1" />
               </div>
-              {/* Add more images as needed */}
+              <div>
+                <img src={feed4} alt="Image 1" />
+              </div>
+              <div>
+                <img src={feed5} alt="Image 1" />
+              </div>
             </Carousel>
           </Col>
         </Row>

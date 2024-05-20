@@ -12,7 +12,7 @@ function Head() {
       <Container>
         <Row>
           <Col lg={{ span: 1, offset: 5 }} className="mt-3 mb-3">
-            <img src={logo} height="70px" width="200px" alt="Logo" />
+            <img src={logo} height="55px" width="200px" alt="Logo" />
           </Col>
 
           {/* <Col lg={{ span: 3, offset: 1 }} className="d-none d-lg-block">

@@ -141,7 +141,7 @@ function Home() {
                       <h1
                         className="mainHeading"
                         // style={{ fontFamily: "monstserrat" }}
-                        style={{ fontFamily: "Helvetica" }}
+                        style={{ fontFamily: "Serif" }}
                       >
                         Women physical &amp; <br /> mental wellness
                       </h1>
@@ -149,7 +149,7 @@ function Home() {
                     <h3
                       className="subHeading"
                       // style={{ fontFamily: "monstserrat" }}
-                      style={{ fontFamily: "Verdana" }}
+                      style={{ fontFamily: "Serif" }}
                     >
                       Join our online yoga classes!
                     </h3>
