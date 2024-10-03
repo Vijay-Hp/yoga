@@ -49,6 +49,7 @@ import feed9 from "../assets/teacher/feedback/feedback (9).jpeg";
 import feed10 from "../assets/teacher/feedback/feedback (10).jpeg";
 import feed11 from "../assets/teacher/feedback/feedback (11).jpeg";
 import feed12 from "../assets/teacher/feedback/feedback (12).jpeg";
+import Carousel1 from "./Carousel1";
 const Teacher = () => {
   return (
     <>
@@ -238,7 +239,7 @@ const Teacher = () => {
           </Col>
         </Row>
 
-        <Row>
+        {/* <Row>
           <h2 className="heading">Gallery</h2>
           <Col lg={3}>
             <img src={teacher1} height={300} />
@@ -294,56 +295,52 @@ const Teacher = () => {
           <Col lg={3}>
             <img src={teacher16} height={300} className="gallery" />
           </Col>
+        </Row> */}
+
+        <Row className="mb-3">
+          <h2 className="heading ">Gallery</h2>
+          <Col lg={3}>
+            <img src={feed1} alt="Image 1" height={300} className="gallery" />
+          </Col>
+          <Col lg={3}>
+            <img src={feed2} alt="Image 1" height={300} className="gallery" />
+          </Col>
+          <Col lg={3}>
+            <img src={feed3} alt="Image 1" height={300} className="gallery" />
+          </Col>
+          <Col lg={3}>
+            <img src={feed4} alt="Image 1" height={300} className="gallery" />
+          </Col>
+          <Col lg={3}>
+            <img src={feed5} alt="Image 1" height={300} className="gallery" />
+          </Col>
+          <Col lg={3}>
+            <img src={feed6} alt="Image 1" height={300} className="gallery" />
+          </Col>
+          <Col lg={3}>
+            <img src={feed7} alt="Image 1" height={300} className="gallery" />
+          </Col>
+          <Col lg={3}>
+            <img src={feed8} alt="Image 1" height={300} className="gallery" />
+          </Col>
+          <Col lg={3}>
+            <img src={feed9} alt="Image 1" height={300} className="gallery" />
+          </Col>
+          <Col lg={3}>
+            <img src={feed10} alt="Image 1" height={300} className="gallery" />
+          </Col>
+          <Col lg={3}>
+            <img src={feed11} alt="Image 1" height={300} className="gallery" />
+          </Col>
+          <Col lg={3}>
+            <img src={feed12} alt="Image 1" height={300} className="gallery" />
+          </Col>
         </Row>
 
         <Row>
-          <Col lg={{ span: 6, offset: 3 }} className="mt-5 mb-5">
-            <h2 className="heading">Feedbacks</h2>
-            <Carousel
-              showArrows={false}
-              infiniteLoop={true}
-              autoPlay={true}
-              interval={3000}
-              showThumbs={false}
-            >
-              <div>
-                <img src={feed1} alt="Image 1" />
-              </div>
-              <div>
-                <img src={feed2} alt="Image 1" />
-              </div>
-              <div>
-                <img src={feed3} alt="Image 1" />
-              </div>
-              <div>
-                <img src={feed4} alt="Image 1" />
-              </div>
-              <div>
-                <img src={feed5} alt="Image 1" />
-              </div>
-
-              <div>
-                <img src={feed6} alt="Image 1" />
-              </div>
-              <div>
-                <img src={feed7} alt="Image 1" />
-              </div>
-              <div>
-                <img src={feed8} alt="Image 1" />
-              </div>
-              <div>
-                <img src={feed9} alt="Image 1" />
-              </div>
-              <div>
-                <img src={feed10} alt="Image 1" />
-              </div>
-              <div>
-                <img src={feed11} alt="Image 1" />
-              </div>
-              <div>
-                <img src={feed12} alt="Image 1" />
-              </div>
-            </Carousel>
+          <h2 className="heading mt-3">Feedbacks</h2>
+          <Col lg={{ span: 6, offset: 3 }} className="mt-5 mb-5 car">
+            <Carousel1 />
           </Col>
         </Row>
       </Container>

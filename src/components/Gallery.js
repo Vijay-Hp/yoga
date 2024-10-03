@@ -30,7 +30,7 @@ const Gallery = () => {
     <>
       <Container>
         <Row>
-          <Col lg={12} className="mt-5">
+          <Col lg={12} className="mt-3">
             <h2 className="heading">Gallery</h2>
           </Col>
         </Row>
@@ -87,19 +87,19 @@ const Gallery = () => {
           <Col lg={3} xs={6} className="mb-5">
             <img src={gal12} className="gallery1" />
           </Col>
-          <Col lg={4} xs={6} className="mb-5">
+          <Col lg={3} xs={6} className="mb-5">
             <img src={gal2} className="gallery1" />
           </Col>
-          <Col lg={4} xs={6} className="mb-5">
+          <Col lg={3} xs={6} className="mb-5">
             <img src={gal3} className="gallery1" />
           </Col>
-          <Col lg={4} xs={6} className="mb-5">
+          {/*<Col lg={4} xs={6} className="mb-5">
             <img src={gal4} className="gallery1" />
           </Col>
           <Col lg={4} xs={6} className="mb-5">
             <img src={gal5} className="gallery1" />
-          </Col>
-          <Col lg={4} xs={6} className="mb-5">
+          </Col> */}
+          <Col lg={3} xs={6} className="mb-5">
             <img src={office} className="gallery1" />
           </Col>
         </Row>

@@ -9,7 +9,6 @@ import {
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
 import Home from "./Home";
 import Onlineyoga from "./Online_yoga";
 import Detox from "./Detox";
@@ -17,43 +16,50 @@ import Teacher from "./Teacher";
 import Testimonial from "./Testimonial";
 import Gallery from "./Gallery";
 import Team from "./Team";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 
 function Navbar1() {
-  const [isSubMenuOpen, setIsSubMenuOpen] = useState(false);
-
-  const handleMouseEnter = () => {
-    setIsSubMenuOpen(true);
-  };
-
-  const handleMouseLeave = () => {
-    setIsSubMenuOpen(false);
-  };
-
   const [expanded, setExpanded] = useState(false);
 
-  const handleToggle = () => setExpanded(!expanded);
-  const handleSelect = () => setExpanded(false);
+  const handleToggle = () => {
+    setExpanded(!expanded);
+  };
+
+  const handleSelect = () => {
+    setExpanded(false);
+  };
+
   return (
     <Router>
       <Navbar
         expanded={expanded}
         expand="lg"
+        className="navbar"
         style={{
           backgroundColor: "#ab3c94",
           position: "sticky",
           top: "0",
           zIndex: "1000",
         }}
-        className="navbar"
+        onToggle={handleToggle}
       >
         <Container>
           <Navbar.Toggle
             aria-controls="basic-navbar-nav"
-            className="navbar-toggler-icon"
             onClick={handleToggle}
-          />
+            style={{
+              padding: "5px 5px",
+              borderRadius: "0.25rem",
+              color: "white",
+              backgroundColor: "transparent",
+              border: "none",
+            }}
+          >
+            <FontAwesomeIcon icon={expanded ? faTimes : faBars} />
+          </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto">
+            <Nav className="me-auto" onSelect={handleSelect}>
               <NavLink
                 to="/"
                 className="nav-link"
@@ -124,7 +130,6 @@ function Navbar1() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/onlineyoga" element={<Onlineyoga />} />
@@ -133,38 +138,6 @@ function Navbar1() {
         <Route path="/testimonial" element={<Testimonial />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/team" element={<Team />} />
-        {/*<Route path="/quertly" element={<Quertly />} />
-        <Route path="/material" element={<Material />} />
-        <Route path="/hr" element={<Hr />} />
-        <Route path="/exports" element={<Exports />} />
-        <Route path="/contact" element={<Contact1 />} />
-        <Route path="/cinnamon" element={<Cinnamon />} />
-        <Route path="/pepper" element={<Pepper />} />
-        <Route path="/tamarind" element={<Tamarind />} />
-        <Route path="/asafoetida" element={<Asafoetida />} />
-        <Route path="/turmeric" element={<Turmeric />} />
-        <Route path="/funnel" element={<Funnel />} />
-        <Route path="/garlic" element={<Garlic />} />
-        <Route path="/mustard" element={<Mustard />} />
-        <Route path="/nutmeg" element={<Nutmeg />} />
-        <Route path="/anise" element={<Anise />} />
-        <Route path="/cumin" element={<Cumin />} />
-        <Route path="/maize" element={<Maize />} />
-        <Route path="/ragi" element={<Ragi />} />
-        <Route path="/bengal" element={<Bengal />} />
-        <Route path="/horse" element={<Horse />} />
-        <Route path="/green" element={<Green />} />
-        <Route path="/dhall" element={<Dhall />} />
-        <Route path="/cashew" element={<Cashew />} />
-        <Route path="/arcanut" element={<Arcanut />} />
-        <Route path="/sugar" element={<Sugar />} />
-        <Route path="/jaggery" element={<Jaggery />} />
-        <Route path="/honey" element={<Honey />} />
-        <Route path="/chillis" element={<Chillis />} />
-        <Route path="/poppy" element={<Poppy />} />
-        <Route path="/sandal" element={<Sandal />} />
-        <Route path="/oil" element={<Oil />} />
-        <Route path="/gingelly" element={<Gingelly />} /> */}
       </Routes>
     </Router>
   );

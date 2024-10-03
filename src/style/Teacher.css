@@ -275,3 +275,16 @@
   margin-top: 20px;
 }
 } 
+
+.gallery1{
+  margin-top: 20px;
+}
+
+.car {
+  margin-top: 60px !important;
+}
+@media only screen and (max-width: 768px) {
+  .car {
+      margin-top: 160px !important;
+  }
+}

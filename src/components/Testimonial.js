@@ -44,59 +44,58 @@ const Testimonial = () => {
           <Col lg="12" className="mt-5 ">
             <h2 className="heading">Testimonials</h2>
           </Col>
-          <Col lg={3}>
-            <img src={feed1} height={250} />
+          <Col lg={4}>
+            <img src={feed1} height={320} className="gallery" />
           </Col>
-          <Col lg={3}>
-            <img src={feed2} height={250} className="gallery" />
+          <Col lg={4}>
+            <img src={feed2} height={320} className="gallery" />
           </Col>
-          <Col lg={3}>
-            <img src={feed3} height={250} className="gallery" />
-          </Col>
-          <Col lg={3}>
-            <img src={feed4} height={250} className="gallery" />
+          <Col lg={4}>
+            <img src={feed3} height={320} className="gallery" />
           </Col>
         </Row>
         <Row className="mt-3">
-          <Col lg={3}>
-            <img src={detox1} height={250} className="gallery" />
+          <Col lg={4}>
+            <img src={feed4} height={320} className="gallery" />
           </Col>
-          <Col lg={3}>
-            <img src={detox2} height={250} className="gallery" />
+          <Col lg={4}>
+            <img src={detox1} height={320} className="gallery" />
           </Col>
-          <Col lg={3}>
-            <img src={detox3} height={250} className="gallery" />
-          </Col>
-          <Col lg={3}>
-            <img src={detox4} height={250} className="gallery" />
+          <Col lg={4}>
+            <img src={detox2} height={320} className="gallery" />
           </Col>
         </Row>
         <Row className="mt-3">
-          <Col lg={3}>
-            <img src={review1} height={250} className="gallery" />
+          <Col lg={4}>
+            <img src={detox3} height={320} className="gallery" />
           </Col>
-          <Col lg={3}>
-            <img src={review2} height={250} className="gallery" />
+          <Col lg={4}>
+            <img src={detox4} height={320} className="gallery" />
           </Col>
-          <Col lg={3}>
-            <img src={review3} height={250} className="gallery" />
-          </Col>
-          <Col lg={3}>
-            <img src={review4} height={250} className="gallery" />
+          <Col lg={4}>
+            <img src={review1} height={320} className="gallery" />
           </Col>
         </Row>
         <Row className="mt-3">
-          <Col lg={3}>
-            <img src={review5} height={250} className="gallery" />
+          <Col lg={4}>
+            <img src={review2} height={320} className="gallery" />
           </Col>
-          <Col lg={3}>
-            <img src={review6} height={250} className="gallery" />
+          <Col lg={4}>
+            <img src={review3} height={320} className="gallery" />
           </Col>
-          <Col lg={3}>
-            <img src={review7} height={250} className="gallery" />
+          <Col lg={4}>
+            <img src={review4} height={320} className="gallery" />
           </Col>
-          <Col lg={3}>
-            <img src={review8} height={250} className="gallery" />
+        </Row>
+        <Row className="mt-3">
+          <Col lg={4}>
+            <img src={review5} height={320} className="gallery" />
+          </Col>
+          <Col lg={4}>
+            <img src={review6} height={320} className="gallery" />
+          </Col>
+          <Col lg={4}>
+            <img src={review7} height={320} className="gallery" />
           </Col>
         </Row>
       </Container>
@@ -114,7 +113,7 @@ const Testimonial = () => {
               </p>
 
               <NavLink to="https://www.instagram.com/divine_yoga_for_women/">
-                <img src={enquiry} height="100" width="250" />
+                <img src={enquiry} height="80" width="240" />
               </NavLink>
             </div>
           </Col>

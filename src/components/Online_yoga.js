@@ -1,9 +1,7 @@
 import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import "../style/Onlineyoga.css";
-import PhoneOutlinedIcon from "@mui/icons-material/PhoneOutlined";
 import Table from "react-bootstrap/Table";
-import { BrowserRouter as Router, Link, Routes, Route } from "react-router-dom";
 import Footer from "../components/Footer";
 import { NavLink } from "react-router-dom";
 import Slider from "react-slick";
@@ -23,29 +21,28 @@ import strength from "../assets/think_12430457.png";
 import fun from "../assets/chat_7112992.png";
 import pcos from "../assets/pain_8902284.png";
 import enquiry from "../assets/enquiry (1).gif";
-import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import { FaWhatsapp } from "react-icons/fa";
 import feed1 from "../assets/review/onlinefeed (1).jpeg";
 import feed2 from "../assets/review/onlinefeed (2).jpeg";
 import feed3 from "../assets/review/onlinefeed (3).jpeg";
 import feed4 from "../assets/review/onlinefeed (4).jpeg";
 import feed5 from "../assets/review/onlinefeed (5).jpeg";
-
-const testimonials = [
-  {
-    id: 1,
-    name: "John Doe",
-    comment: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-  },
-  {
-    id: 2,
-    name: "Jane Smith",
-    comment:
-      "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  },
-  // Add more testimonials as needed
-];
-
+import teacher1 from "../assets/teacher/teacher (1).jpeg";
+import teacher2 from "../assets/teacher/teacher (2).jpeg";
+import teacher3 from "../assets/teacher/teacher (3).jpeg";
+import teacher4 from "../assets/teacher/teacher (4).jpeg";
+import teacher5 from "../assets/teacher/teacher (5).jpeg";
+import teacher6 from "../assets/teacher/teacher (6).jpeg";
+import teacher7 from "../assets/teacher/teacher (7).jpeg";
+import teacher8 from "../assets/teacher/teacher (8).jpeg";
+import teacher9 from "../assets/teacher/teacher (9).jpeg";
+import teacher10 from "../assets/teacher/teacher (10).jpeg";
+import teacher11 from "../assets/teacher/teacher (11).jpeg";
+import teacher12 from "../assets/teacher/teacher (12).jpeg";
+import teacher13 from "../assets/teacher/teacher (13).jpeg";
+import teacher14 from "../assets/teacher/teacher (14).jpeg";
+import teacher15 from "../assets/teacher/teacher (15).jpeg";
+import teacher16 from "../assets/teacher/teacher (16).jpeg";
 const Onlineyoga = () => {
   const settings = {
     dots: true,
@@ -423,7 +420,66 @@ const Onlineyoga = () => {
 
       <Container>
         <Row>
-          <Col lg={{ span: 6, offset: 3 }} className="mb-5">
+          <h2 className="heading" style={{ marginTop: "-50px" }}>
+            Gallery
+          </h2>
+          <Col lg={3}>
+            <img src={teacher1} height={300} />
+          </Col>
+          <Col lg={3}>
+            <img src={teacher2} height={300} className="gallery" />
+          </Col>
+          <Col lg={3}>
+            <img src={teacher3} height={300} className="gallery" />
+          </Col>
+          <Col lg={3}>
+            <img src={teacher4} height={300} className="gallery" />
+          </Col>
+        </Row>
+        <Row className="mt-3">
+          <Col lg={3}>
+            <img src={teacher5} height={300} className="gallery" />
+          </Col>
+          <Col lg={3}>
+            <img src={teacher6} height={300} className="gallery" />
+          </Col>
+          <Col lg={3}>
+            <img src={teacher7} height={300} className="gallery" />
+          </Col>
+          <Col lg={3}>
+            <img src={teacher8} height={300} className="gallery" />
+          </Col>
+        </Row>
+        <Row className="mt-3">
+          <Col lg={3}>
+            <img src={teacher9} height={300} className="gallery" />
+          </Col>
+          <Col lg={3}>
+            <img src={teacher10} height={300} className="gallery" />
+          </Col>
+          <Col lg={3}>
+            <img src={teacher11} height={300} className="gallery" />
+          </Col>
+          <Col lg={3}>
+            <img src={teacher12} height={300} className="gallery" />
+          </Col>
+        </Row>
+        <Row className="mt-3">
+          <Col lg={3}>
+            <img src={teacher13} height={300} className="gallery" />
+          </Col>
+          <Col lg={3}>
+            <img src={teacher14} height={300} className="gallery" />
+          </Col>
+          <Col lg={3}>
+            <img src={teacher15} height={300} className="gallery" />
+          </Col>
+          <Col lg={3}>
+            <img src={teacher16} height={300} className="gallery" />
+          </Col>
+        </Row>
+        <Row>
+          <Col lg={{ span: 6, offset: 3 }} className="mb-5 mt-5 ">
             <h2 className="heading">Feedbacks</h2>
             <Carousel
               showArrows={false}
@@ -479,7 +535,7 @@ const Onlineyoga = () => {
                 </button>
               </NavLink> */}
               <NavLink to="https://www.instagram.com/divine_yoga_for_women/">
-                <img src={enquiry} height="100" width="250" />
+                <img src={enquiry} height="80" width="240" />
               </NavLink>
             </div>
           </Col>

@@ -27,9 +27,9 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
+import { FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
 import Carousel from "./Carousel";
 import Carousel1 from "./Carousel1";
-
 import shape1 from "../assets/shape.png";
 import shape2 from "../assets/shape-1.png";
 import shape3 from "../assets/shape-2.png";
@@ -178,9 +178,11 @@ function Home() {
                 of women, focusing on enhancing feminine energy, strength, and
                 balance.
               </p>
-              <Button variant="primary" className="btn1" href="/onlineyoga">
-                Read More
-              </Button>
+              <NavLink to="/onlineyoga">
+                <Button variant="primary" className="btn1">
+                  <p style={{ marginTop: "2px" }}>Read More</p>
+                </Button>
+              </NavLink>
             </div>
           </Col>
           <Col lg={3} data-aos="fade-up" data-aos-duration="1500">
@@ -191,14 +193,11 @@ function Home() {
                 yoga classes. Our classes help alleviate discomforts and prepare
                 you for childbirth.
               </p>
-              <Button
-                variant="primary"
-                className="btn2"
-                href="/onlineyoga"
-                // style={{ marginTop: "30px" }}
-              >
-                Read More
-              </Button>
+              <NavLink to="/onlineyoga">
+                <Button variant="primary" className="btn2">
+                  <p style={{ marginTop: "2px" }}>Read More</p>
+                </Button>
+              </NavLink>
             </div>
           </Col>
           <Col lg={3} data-aos="fade-up" data-aos-duration="1500">
@@ -210,14 +209,11 @@ function Home() {
                 within.
               </p>
               <br />
-              <Button
-                variant="primary"
-                className="btn2"
-                href="/detox"
-                // style={{ marginTop: "55px" }}
-              >
-                Read More
-              </Button>
+              <NavLink to="/detox">
+                <Button variant="primary" className="btn2">
+                  <p style={{ marginTop: "2px" }}>Read More</p>
+                </Button>
+              </NavLink>
             </div>
           </Col>
           <Col lg={3} data-aos="fade-up" data-aos-duration="1500">
@@ -228,14 +224,11 @@ function Home() {
                 comprehensive yoga teacher training course.
               </p>
               <br />
-              <Button
-                variant="primary"
-                className="btn2"
-                href="/teacher"
-                // style={{ marginTop: "55px" }}
-              >
-                Read More
-              </Button>
+              <NavLink to="/teacher">
+                <Button variant="primary" className="btn2">
+                  <p style={{ marginTop: "2px" }}>Read More</p>
+                </Button>
+              </NavLink>
             </div>
           </Col>
         </Row>
@@ -327,7 +320,7 @@ function Home() {
         </Row>
 
         <Row>
-          <Col lg={{ span: 6, offset: 3 }} className="mb-5 mt-5">
+          <Col lg={{ span: 6, offset: 3 }} className="mb-5 car">
             <Carousel1 />
           </Col>
         </Row>

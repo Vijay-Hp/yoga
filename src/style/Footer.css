@@ -27,11 +27,7 @@
       z-index: 100;
     }
   }
-  /* .my-float {
-    margin-top: -1px;
-    margin-left: 2px;
-  }
-   */
+
   .phone {
     position: fixed;
     width: 60px;

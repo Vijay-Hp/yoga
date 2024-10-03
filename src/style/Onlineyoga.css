@@ -8,7 +8,7 @@
 {
   margin-top: 40px;
   color: #ab3c94;
-  margin-left: -300px; 
+  margin-left: -300px !important; 
   font-size: 50px !important;
   height: 50px;
   width: 50px;
@@ -18,7 +18,7 @@
 {
   margin-top: 40px;
   color: #ab3c94;
-  margin-left: -400px; 
+  margin-left: -280px !important; 
   font-size: 50px !important;
 }
 } 
@@ -112,35 +112,6 @@
   font-family: 'Montserrat';
  font-variant:small-caps;
 }
-/* 
-.heading1
-{
-  font-family: 'Serif ';
- font-style: oblique;
-}
-
-.heading2
-{
-  font-family: Tahoma, Verdana, sans-serif;
- 
-}
-
-.heading3
-{
-  font-family: Arial, Helvetica, sans-serif;
- 
-}
-
-.heading4
-{
-  font-family: "Lucida Console", "Courier New", monospace;
-}
-
-.heading5
-{
-  
-font-family: Tahoma, sans-serif;
-} */
 
 @media (max-width: 768px) {
   .gallery
